@@ -11,7 +11,9 @@ public class Main {
 		// SortTools.isSorted() etc.
 
 		int arr[] = { 2, 3, 4, 10, 40 };
-		System.out.println(SortTools.find(arr,arr.length,11));
-
+		int y[] = SortTools.insertGeneral(arr,arr.length,34);
+		for(int i =0;i<y.length;i++){
+			System.out.println(y[i]);
+		}
 	}
 }

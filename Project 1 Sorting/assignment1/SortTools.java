@@ -80,8 +80,8 @@ public class SortTools {
 		else{ //y needs to have element V added in as sorted
 			int[] y = new int[x.length+1];
 			boolean inserted = false;
-			for(int i = 0;i<n;i++){
-				if(v<x[i]){
+			for(int i = 0;i<n+1;i++){
+				if(v>x[i]){
 					y[i]=x[i];
 				}
 				else if(!inserted){
