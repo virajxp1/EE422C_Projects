@@ -67,10 +67,34 @@ public class SortTools {
 	 * @return a new array containing the first n elements of x, and v
 	 */
 	public static int[] insertGeneral(int[] x, int n, int v){
-		// stub only, you write this!
-		// TODO: complete it
-        return null;
-    }
+		//x is an array n is the number of elements in x
+		//if x contains v copy over all elements of x into y
+		//other wise copy over and add the element v to the new array y in the right spot
+
+		if(SortTools.find(x,n,v) != -1) { //O(logn) + O(n) = O(n) so no impact on time complexity
+			int[] y = new int[x.length]; //new array y
+			if (n >= 0) System.arraycopy(x, 0, y, 0, n); //just copy over into y
+			return y;
+		}
+
+		else{ //y needs to have element V added in as sorted
+			int[] y = new int[x.length+1];
+			boolean inserted = false;
+			for(int i = 0;i<n;i++){
+				if(v<x[i]){
+					y[i]=x[i];
+				}
+				else if(!inserted){
+					y[i] = v;
+					inserted = true;
+				}
+				else{
+					y[i] = x[i-1];
+				}
+			}
+			return y;
+		}
+	}
 
 	/**
 	 * This method inserts a value into the array and ensures it's still sorted
