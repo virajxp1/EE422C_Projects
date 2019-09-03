@@ -44,19 +44,20 @@ public class SortTools {
 	 */
 	public static int find(int[] x, int n, int v) {
 		//O(log(n)) -> binary search
-		int key = v; int low = 0; int high = n;
-
+		int key = v; int low = 0; int high = n-1;
 		while(low<=high){ //when low>high than you have looked through all elements
 			int mid = (low+high)/2;
-			if(x[mid] == key) //if x[mid] == key ie the number searching for than we are done
-				return mid;
-			else if(key>x[mid]){
-				low = mid+1; //readjust low to mid +1 because key is greater than mid element
+			if(key<x[mid]){
+				high = mid-1; //readjust high to mid - 1 because key is < than mid element
 			}
+			else if(key>x[mid])
+				low = mid+1; //re-adjust low to mid + 1 because key is > than the mid element
 			else
-				high = mid-1; //re-adjust high to mid-1 because key is less than the mid element
+				return mid;
 		}
-        return -1;
+		//if(low == high && x[low] == key)
+		//	return low;
+        return -1; //key not found
     }
 
 	/**
@@ -71,27 +72,23 @@ public class SortTools {
 		//if x contains v copy over all elements of x into y
 		//other wise copy over and add the element v to the new array y in the right spot
 
-		if(SortTools.find(x,n,v) != -1) { //O(logn) + O(n) = O(n) so no impact on time complexity
-			int[] y = new int[x.length]; //new array y
+		if(find(x,n,v) != -1) { //O(logn) + O(n) = O(n) so no impact on time complexity
+			int[] y = new int[n]; //new array y
 			if (n >= 0) System.arraycopy(x, 0, y, 0, n); //just copy over into y
 			return y;
 		}
-
 		else{ //y needs to have element V added in as sorted
-			int[] y = new int[x.length+1];
-			boolean inserted = false;
-			for(int i = 0;i<n+1;i++){
-				if(v>x[i]){
-					y[i]=x[i];
-				}
-				else if(!inserted){
-					y[i] = v;
-					inserted = true;
-				}
-				else{
-					y[i] = x[i-1];
-				}
-			}
+			int[] y = new int[n+1];
+			int i = 0;
+			while(i<n && v>x[i]){ //copy untill reach position where new elements should be added
+			    y[i]=x[i];
+			    i++;
+            }
+			y[i] = v; //add new element
+			while(i<n){
+			    y[i+1]= x[i]; //copy over remaining part of array
+			    i++;
+            }
 			return y;
 		}
 	}
@@ -104,9 +101,25 @@ public class SortTools {
 	 * @return n if v is already in x, otherwise returns n+1
 	 */
 	public static int insertInPlace(int[] x, int n, int v){
-		// stub only, you write this!
-		// TODO: complete it
-        return -1;
+		//there is a dummy spot at the end of the array
+		//find position, place, shift over
+		if(find(x,n,v) != -1) //if V is in the array return n
+			return n;
+		else{ //insert v into the array
+			//find index
+			//shift over from index to n
+			//place at index
+			int index = 0;
+			for(int i = 1;i<n;i++){
+				if(v>x[i-1] && v<x[i])
+					index = i;
+			}
+			for(int i = n;i>index;i--){
+				x[i] = x[i-1];
+			}
+			x[index] = v;
+		}
+        return n+1;
     }
 
 	/**

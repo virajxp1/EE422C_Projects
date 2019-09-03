@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ae1b0cd-3c0b-457d-8604-cc22cdb1005c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment1/SortTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/SortTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/META-INF/Project 1 Sorting.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/Project 1 Sorting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/Project 1 Sorting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/SortTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/SortTools.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +28,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
@@ -68,5 +77,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignment1/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

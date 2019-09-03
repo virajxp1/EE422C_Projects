@@ -5,10 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment1/SortTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/SortTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/META-INF/Project 1 Sorting.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/Project 1 Sorting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/Project 1 Sorting.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/SortTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/SortTools.class" afterDir="false" />
     </list>
@@ -82,9 +79,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/assignment1/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/assignment1/SortTools.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/assignment1/SortTools.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
