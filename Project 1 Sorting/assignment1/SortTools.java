@@ -128,5 +128,14 @@ public class SortTools {
 	 * @param n is the number of elements of the array to be sorted
 	 */
 	public static void insertSort(int[] x, int n){
+		for(int i = 1;i<n;i++){
+			int element = x[i];
+			for(int j = i-1;j>=0;j--){
+				if(x[j]>element){ //swap elements to the front if its smaller than the current element
+					x[j+1] = x[j];
+					x[j] = element;
+				}
+			}
+		}
     }
 }

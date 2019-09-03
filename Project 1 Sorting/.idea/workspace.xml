@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment1/SortTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/SortTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/SortTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/SortTools.class" afterDir="false" />
     </list>
@@ -60,6 +59,14 @@
       <option name="presentableId" value="Default" />
       <updated>1567467919822</updated>
     </task>
+    <task id="LOCAL-00001" summary="4th algorithm written needs testing">
+      <created>1567546326836</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567546326836</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,18 +82,17 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="4th algorithm written needs testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th algorithm written needs testing" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/assignment1/SortTools.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/assignment1/SortTools.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="7" />
+          <line>130</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
