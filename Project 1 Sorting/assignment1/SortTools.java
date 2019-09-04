@@ -1,12 +1,11 @@
 // SortTools.java 
 /*
  * EE422C Project 1 submission by
- * Replace <...> with your actual data.
- * <Student Name>
- * <Student EID>
- * <5-digit Unique No.>
- * Fall 2018
- * Slip days used: 
+ * <Viraj Parikh>
+ * <VHP286>
+ * <#16180>
+ * Fall 2019
+ * Slip days used: 0
  */
 
 package assignment1;
@@ -105,12 +104,12 @@ public class SortTools {
 		//find position, place, shift over
 		if(find(x,n,v) != -1) //if V is in the array return n
 			return n;
-		else{ //insert v into the array
+		else{ 
+			//insert v into the array
 			//find index
 			//shift over from index to n
 			//place at index
-
-			int index = 0; int i = 0;
+			int index = 0; int i = 0; 
 			while(i<n){
 				if(x[i]<v){
 					index++;
@@ -118,9 +117,9 @@ public class SortTools {
 				i++;
 			}
 			for(i = n;i>index;i--){
-				x[i] = x[i-1];
+				x[i] = x[i-1]; //shifting over to create space 
 			}
-			x[index] = v;
+			x[index] = v; //place number into found index
 		}
         return n+1;
     }
@@ -131,10 +130,12 @@ public class SortTools {
 	 * @param n is the number of elements of the array to be sorted
 	 */
 	public static void insertSort(int[] x, int n){
+		//implement insertion sort
+
 		for(int i = 1;i<n;i++){
-			int element = x[i];
+			int element = x[i]; //current element 
 			for(int j = i-1;j>=0;j--){
-				if(x[j]>element){ //swap elements to the front if its smaller than the current element
+				if(x[j]>element){  //swap elements to the front if its smaller than the current element
 					x[j+1] = x[j];
 					x[j] = element;
 				}
