@@ -4,7 +4,7 @@
  */
 
 package assignment1;
-import java.util.Arrays;
+import java.util.*;
 
 public class Main {
 	public static void main(String [] args) {
@@ -30,10 +30,26 @@ public class Main {
 		System.out.println("True" + SortTools.isSorted(a4,a4.length-4));
 		*/
 		// find test cases
-
-
-
+		int find[] = {1,4,6,70,99};
+		int find2[] = {1,1,2,3,3};
+		System.out.println("0" + SortTools.find(find,find.length,1));
+		System.out.println("0" + SortTools.find(find,find.length-1,1));
+		System.out.println("-1" + SortTools.find(find,find.length-1,99));
+		System.out.println("3" + SortTools.find(find,find.length-1,70));
+		System.out.println("1" + SortTools.find(find,find.length-3,4));
+		System.out.println("-1" + SortTools.find(find,find.length-3,40));
+		System.out.println("0" + SortTools.find(find,find.length-4,1));
+		System.out.println("-1" + SortTools.find(find,find.length-4,10));
+		System.out.println("2 or 3 "+SortTools.find(find2,find2.length,3));
+		System.out.println("0 or 1 " + SortTools.find(find2,find2.length,1));
+		System.out.println("2" + SortTools.find(find2,find2.length-2,2));
+		int find3[] ={1, 1, 1, 1, 2};
+		System.out.println("-1" + SortTools.find(find3,find3.length-1,40));
 		//General insert test
+		int gen[] = {12,14,67,77,88,90};
+		int gen2[] = {1,2,2,2,3};
+
+		System.out.println();
 
 
 		//Insert in place test

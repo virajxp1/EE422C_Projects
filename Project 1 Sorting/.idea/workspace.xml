@@ -4,9 +4,8 @@
     <list default="true" id="9ae1b0cd-3c0b-457d-8604-cc22cdb1005c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment1/SortTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/SortTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/SortTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project 1 Sorting/assignment1/SortTools.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +39,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="Run" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="assignment1.Main" />
       <module name="Project 1 Sorting" />
       <method v="2">
