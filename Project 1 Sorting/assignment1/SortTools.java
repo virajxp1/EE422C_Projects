@@ -109,12 +109,15 @@ public class SortTools {
 			//find index
 			//shift over from index to n
 			//place at index
-			int index = 0;
-			for(int i = 1;i<n;i++){
-				if(v>x[i-1] && v<x[i])
-					index = i;
+
+			int index = 0; int i = 0;
+			while(i<n){
+				if(x[i]<v){
+					index++;
+				}
+				i++;
 			}
-			for(int i = n;i>index;i--){
+			for(i = n;i>index;i--){
 				x[i] = x[i-1];
 			}
 			x[index] = v;
