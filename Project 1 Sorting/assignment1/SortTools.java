@@ -74,7 +74,7 @@ public class SortTools {
 
 		if(find(x,n,v) != -1) { //O(logn) + O(n) = O(n) so no impact on time complexity
 			int[] y = new int[n]; //new array y
-			if (n >= 0) System.arraycopy(x, 0, y, 0, n); //just copy over into y
+			System.arraycopy(x, 0, y, 0, n); //just copy over into y
 			return y;
 		}
 		else{ //y needs to have element V added in as sorted
