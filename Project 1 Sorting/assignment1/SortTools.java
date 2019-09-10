@@ -10,6 +10,7 @@
 
 package assignment1;
 public class SortTools {
+	
 	/**
 	  * This method tests to see if the given array is sorted.
 	  * @param x is the array
@@ -19,16 +20,14 @@ public class SortTools {
 
 	public static boolean isSorted(int[] x, int n) {
 		//Check if length or n == 0 if true return false
-		if((x.length == 0) || n == 0){
+		if((x.length == 0) || n == 0)
 			return false;
-		}
 
 		//iterate through n elements to see if any element is less than the previous element
 		//one iteration through entire array O(n)
-		for(int i = 1;i<n;i++){
+		for(int i = 1;i<n;i++)
 			if(x[i]<x[i-1])
 				return false;
-		}
 
 		//if finishes iterating through than the array is sorted in non-decreasing order
 		return true;
@@ -41,21 +40,19 @@ public class SortTools {
 	 * @param v is the value to be searched for within x
 	 * @return index of v if v is contained within x. -1 if v is not contained within x
 	 */
+
 	public static int find(int[] x, int n, int v) {
 		//O(log(n)) -> binary search
-		int key = v; int low = 0; int high = n-1;
+		int low = 0; int high = n-1;
 		while(low<=high){ //when low>high than you have looked through all elements
 			int mid = (low+high)/2;
-			if(key<x[mid]){
+			if(v<x[mid])
 				high = mid-1; //readjust high to mid - 1 because key is < than mid element
-			}
-			else if(key>x[mid])
+			else if(v>x[mid])
 				low = mid+1; //re-adjust low to mid + 1 because key is > than the mid element
 			else
 				return mid;
 		}
-		//if(low == high && x[low] == key)
-		//	return low;
         return -1; //key not found
     }
 
@@ -66,6 +63,7 @@ public class SortTools {
 	 * @param v is the value to be added to the new array
 	 * @return a new array containing the first n elements of x, and v
 	 */
+
 	public static int[] insertGeneral(int[] x, int n, int v){
 		//x is an array n is the number of elements in x
 		//if x contains v copy over all elements of x into y
