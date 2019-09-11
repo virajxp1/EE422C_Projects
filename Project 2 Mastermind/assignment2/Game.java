@@ -18,13 +18,18 @@ public class Game {
         turns = GameConfiguration.guessNumber;
     }
 
-    public void runGame(Scanner input) {
+    public void runGame(Scanner input) { //Game engine
+        Board gameBoard = new Board(code);
         while (turns > 0) {
-            System.out.println("");
-            System.out.println("You have "+this.turns+" guess(es) left");
-            System.out.println("Enter guess:");
-            Code guess = new Code(input.next());
+            Code guess = new Code("");
+            guess.getGuess(input);
         }
+    }
+
+    public void printStartTurn(){
+        System.out.println("");
+        System.out.println("You have "+this.turns+" guess(es) left");
+        System.out.println("Enter guess:");
     }
 
     public void resetGame(){
