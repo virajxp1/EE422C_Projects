@@ -18,15 +18,23 @@ public class Game {
         turns = GameConfiguration.guessNumber;
     }
 
-    public boolean runGame(Scanner input) {
+    public void runGame(Scanner input) {
         while (turns > 0) {
-
+            System.out.println("");
+            System.out.println("You have "+this.turns+" guess(es) left");
+            System.out.println("Enter guess:");
+            Code guess = new Code(input.next());
         }
-        return false;
     }
 
     public void resetGame(){
 
     }
 
+    public boolean checkGame(Scanner input){
+        System.out.println("Do you want to play a new game? (Y/N):");
+        if(!input.next().equals("Y"))
+            return true;
+        return false;
+    }
 }
