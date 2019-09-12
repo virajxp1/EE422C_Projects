@@ -24,8 +24,14 @@ public class Game {
             printStartTurn();
             Code guess = new Code("");
             guess.getGuess(input);
+            boolean win = gameBoard.CalculatePegs(guess);
+            if(win){
+                System.out.println("You win!");
+                return;
+            }
             turns--;
         }
+        System.out.println("You lose! The pattern was " + code.toString());
     }
 
     public void printStartTurn(){

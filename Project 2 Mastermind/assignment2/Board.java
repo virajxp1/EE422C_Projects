@@ -12,7 +12,7 @@ public class Board {
         this.secret = secret;
     }
 
-    public void CalculatePegs(Code guess){
+    public boolean CalculatePegs(Code guess){
         int black_pegs = 0;
         int white_pegs = 0;
         for(int i = 0;i<GameConfiguration.pegNumber;i++){
@@ -24,6 +24,12 @@ public class Board {
             }
         }
         History.add(guess);
+        System.out.println(guess.toString() + " -> " + black_pegs + "b_" + white_pegs+"w");
+
+        if(black_pegs == 4)
+            return true;
+        else
+            return false;
     }
 
     public void printHistory(){
