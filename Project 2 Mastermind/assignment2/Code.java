@@ -17,12 +17,12 @@ public class Code {
     public void printCode(){ System.out.println(code); }
 
     private boolean checkLength(String temp){
-        return temp.length() != GameConfiguration.pegNumber;
+        return (temp.length() == GameConfiguration.pegNumber);
     }
 
     private boolean checkContent(String temp){
         for(int i = 0;i<temp.length();i++){
-            if(!checkLetter(temp.substring(i,i)))
+            if(!checkLetter(temp.substring(i,i+1)))
                 return false;
         }
         return true;
@@ -37,18 +37,23 @@ public class Code {
     }
 
     public void getGuess(Scanner input) {
-        String temp = input.next();
-        while(!checkLength(temp)){
-            System.out.println("INVALID GUESS");
-            temp = input.next();
-        }
-        while(!checkContent(temp)){
-            System.out.println("INVALID GUESS");
-            temp = input.next();
-        }
-        this.code = temp;
+        this.code = input.next();
     }
-
+    public boolean validateGuess(Board gameboard){
+        if(code.equals("HISTORY")){
+            gameboard.printHistory();
+            return false;
+        }
+        if(!checkLength(code)){
+            System.out.println("INVALID_GUESS");
+            return false;
+        }
+        while(!checkContent(code)){
+            System.out.println("INVALID_GUESS");
+            return false;
+        }
+        return true;
+    }
     public String getCode(){
         return code;
     }

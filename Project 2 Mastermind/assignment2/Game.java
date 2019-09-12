@@ -13,17 +13,22 @@ public class Game {
     public Game(boolean driver_input) {
         testing = driver_input;
         code = new Code();
-        if (driver_input)
+        if (driver_input){
+            System.out.print("Secret Code:");
             code.printCode();
+        }
         turns = GameConfiguration.guessNumber;
     }
 
     public void runGame(Scanner input) { //Game engine
         Board gameBoard = new Board(code);
         while (turns > 0) {
-            printStartTurn();
             Code guess = new Code("");
-            guess.getGuess(input);
+            do{
+                printStartTurn();
+                guess.getGuess(input);
+            }
+            while(!guess.validateGuess(gameBoard));
             boolean win = gameBoard.CalculatePegs(guess);
             if(win){
                 System.out.println("You win!");
@@ -31,20 +36,17 @@ public class Game {
             }
             turns--;
         }
-        System.out.println("You lose! The pattern was " + code.toString());
+        System.out.println("You lose! The pattern was " + code.getCode());
+        System.out.println();
     }
 
     public void printStartTurn(){
         System.out.println("");
-        System.out.println("You have "+this.turns+" guess(es) left");
+        System.out.println("You have "+this.turns+" guess(es) left.");
         System.out.println("Enter guess:");
     }
 
-    public void resetGame(){
-
-    }
-
-    public boolean checkGame(Scanner input){
+    public static boolean checkGame(Scanner input){
         System.out.println("Do you want to play a new game? (Y/N):");
         if(!input.next().equals("Y"))
             return true;
