@@ -3,7 +3,11 @@ import java.util.*;
 
 public class Driver {
     public static void main(String[] args){
-        Game mastermind = new Game(args[0].equals(1)); //Game
+        Game mastermind;
+        if(args.length!= 0)
+            mastermind = new Game(args[0].equals(1)); //Game
+        else
+            mastermind = new Game(false); //Game
         Scanner input = new Scanner(System.in); //Input scanner
         System.out.println("Welcome to Mastermind");
         boolean Gameend = mastermind.checkGame(input);

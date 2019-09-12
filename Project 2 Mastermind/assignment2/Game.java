@@ -21,8 +21,10 @@ public class Game {
     public void runGame(Scanner input) { //Game engine
         Board gameBoard = new Board(code);
         while (turns > 0) {
+            printStartTurn();
             Code guess = new Code("");
             guess.getGuess(input);
+            turns--;
         }
     }
 

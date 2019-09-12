@@ -27,10 +27,11 @@ public class Code {
                 if(!temp.contains(GameConfiguration.colors[i]))
                     end = false;
             }
-            if(!end)
+            if(end)
                 break;
             else{
                 System.out.println("INVALID GUESS");
+
                 temp = input.next();
             }
         }
