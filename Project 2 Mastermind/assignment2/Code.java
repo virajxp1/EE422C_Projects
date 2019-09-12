@@ -36,4 +36,8 @@ public class Code {
         }
         this.code = temp;
     }
+
+    public String getCode(){
+        return code;
+    }
 }
