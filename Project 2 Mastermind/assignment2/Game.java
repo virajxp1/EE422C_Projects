@@ -1,3 +1,11 @@
+/*
+ * EE422C Project 2 (Mastermind) submission by
+ * <Viraj Parikh>
+ * <VHP286>
+ * Slip days used: <0>
+ * Fall 2019
+ */
+
 package assignment2;
 
 import java.util.Scanner;

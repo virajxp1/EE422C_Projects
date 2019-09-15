@@ -1,7 +1,16 @@
+/*
+ * EE422C Project 2 (Mastermind) submission by
+ * <Viraj Parikh>
+ * <VHP286>
+ * Slip days used: <0>
+ * Fall 2019
+ */
+
 package assignment2;
 
 import java.util.ArrayList;
 import java.lang.System;
+import java.util.HashMap;
 
 public class Board {
     private Code secret;
@@ -36,12 +45,41 @@ public class Board {
     }
 
     public int totalCorrectPegs(Code guess,Code secret){
-        //HashMap<String,Integer> colorSeen= new HashMap(); //Hash map to mark if the
+        HashMap<String,Integer> secretFreq = new HashMap<String,Integer>();
+        HashMap<String,Integer> guessFreq = new HashMap<String, Integer>();
         int total = 0;
-
         for(int i = 0;i<secret.getCode().length();i++){
-            if(guess.getCode().contains(secret.getCode().substring(i,i+1))){
-                total++;
+            if(secretFreq.containsKey(secret.getCode().substring(i,i+1))){
+                int oldF = secretFreq.get(secret.getCode().substring(i,i+1));
+                oldF++;
+                secretFreq.replace(secret.getCode().substring(i,i+1),oldF);
+            }
+            else{
+                secretFreq.put(secret.getCode().substring(i,i+1),1);
+            }
+        }
+        for(int i = 0;i<guess.getCode().length();i++){
+            if(guessFreq.containsKey(guess.getCode().substring(i,i+1))){
+                int oldF = guessFreq.get(guess.getCode().substring(i,i+1));
+                oldF++;
+                guessFreq.replace(guess.getCode().substring(i,i+1),oldF);
+            }
+            else{
+                guessFreq.put(guess.getCode().substring(i,i+1),1);
+            }
+        }
+
+        for(int i = 0;i<GameConfiguration.colors.length;i++){
+            if(secretFreq.containsKey(GameConfiguration.colors[i]) && guessFreq.containsKey(GameConfiguration.colors[i])){
+                if(guessFreq.get(GameConfiguration.colors[i]) < secretFreq.get(GameConfiguration.colors[i])){
+                    total += guessFreq.get(GameConfiguration.colors[i]);
+                }
+                else if(guessFreq.get(GameConfiguration.colors[i]) > secretFreq.get(GameConfiguration.colors[i])){
+                    total += secretFreq.get(GameConfiguration.colors[i]);
+                }
+                else{
+                    total += guessFreq.get(GameConfiguration.colors[i]);
+                }
             }
         }
 
