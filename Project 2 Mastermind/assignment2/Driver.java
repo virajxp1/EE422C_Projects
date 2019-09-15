@@ -5,7 +5,7 @@ import java.util.*;
 public class Driver {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in); //Input scanner
-        System.out.println("Welcome to Mastermind");
+        System.out.println("Welcome to Mastermind.");
         boolean testing = (args.length!=0 && args[0].equals("1"));
         while(true){
             boolean end = Game.checkGame(input);

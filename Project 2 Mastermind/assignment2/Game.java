@@ -32,6 +32,7 @@ public class Game {
             boolean win = gameBoard.CalculatePegs(guess);
             if(win){
                 System.out.println("You win!");
+                System.out.println("");
                 return;
             }
             turns--;
