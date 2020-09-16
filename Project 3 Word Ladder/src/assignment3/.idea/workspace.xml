@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="951a00b1-3351-4477-aa24-56ec065b0b2b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assignment3/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment3/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/assignment3/Main.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1RNyuUEomtpXBackDF3Bp86kHJy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.SampleTest.testPrintLadder">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="assignment3.Main" />
+      <module name="assignment3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleTest.testBFS1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assignment3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment3" />
+      <option name="MAIN_CLASS_NAME" value="assignment3.SampleTest" />
+      <option name="METHOD_NAME" value="testBFS1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleTest.testBFS2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assignment3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment3" />
+      <option name="MAIN_CLASS_NAME" value="assignment3.SampleTest" />
+      <option name="METHOD_NAME" value="testBFS2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleTest.testDFS1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assignment3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment3" />
+      <option name="MAIN_CLASS_NAME" value="assignment3.SampleTest" />
+      <option name="METHOD_NAME" value="testDFS1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleTest.testDFS2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assignment3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment3" />
+      <option name="MAIN_CLASS_NAME" value="assignment3.SampleTest" />
+      <option name="METHOD_NAME" value="testDFS2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleTest.testPrintLadder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assignment3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment3" />
+      <option name="MAIN_CLASS_NAME" value="assignment3.SampleTest" />
+      <option name="METHOD_NAME" value="testPrintLadder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.SampleTest.testDFS1" />
+      <item itemvalue="JUnit.SampleTest.testBFS1" />
+      <item itemvalue="JUnit.SampleTest.testDFS2" />
+      <item itemvalue="JUnit.SampleTest.testBFS2" />
+      <item itemvalue="JUnit.SampleTest.testPrintLadder" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SampleTest.testPrintLadder" />
+        <item itemvalue="JUnit.SampleTest.testBFS2" />
+        <item itemvalue="JUnit.SampleTest.testBFS1" />
+        <item itemvalue="JUnit.SampleTest.testDFS1" />
+        <item itemvalue="JUnit.SampleTest.testDFS2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="951a00b1-3351-4477-aa24-56ec065b0b2b" name="Default Changelist" comment="" />
+      <created>1569522070796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569522070796</updated>
+    </task>
+    <task id="LOCAL-00001" summary="input stream set up using a scanner. input words are put into arraylist as per instructions">
+      <created>1569534588427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569534588428</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create Graph class and wrote the constructor and some helper functions that create an adj matrix to identify which nodes/words are connected to other words in the graph.">
+      <created>1569613542031</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569613542031</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Graph class has functioning DFS function in the class which returns an Array list of the path">
+      <created>1569727651121</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569727651121</updated>
+    </task>
+    <task id="LOCAL-00004" summary="DFS Working and tested with sample test case">
+      <created>1569858537314</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569858537314</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="input stream set up using a scanner. input words are put into arraylist as per instructions" />
+    <MESSAGE value="Create Graph class and wrote the constructor and some helper functions that create an adj matrix to identify which nodes/words are connected to other words in the graph." />
+    <MESSAGE value="Graph class has functioning DFS function in the class which returns an Array list of the path" />
+    <MESSAGE value="DFS Working and tested with sample test case" />
+    <option name="LAST_COMMIT_MESSAGE" value="DFS Working and tested with sample test case" />
+  </component>
+</project>
